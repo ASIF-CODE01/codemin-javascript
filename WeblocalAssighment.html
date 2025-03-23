@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>storage</h2>
+    <script>
+        // console.log("webLocalStorage");
+        // window.localStorage.setIteam("nama:", "ASIF");
+        // window.localStorage.setItem("city","pune");
+        // window.localStorage.setItem("pin","413114");
+        // window.localStorage.setItem("dist","Pune");
+     // Add data to local storage
+localStorage.setItem("name", "Asif");
+localStorage.setItem("city", "Pune");
+localStorage.setItem("pinCode", "413114");
+localStorage.setItem("district", "Pune");
+
+
+// Remove city from local storage
+localStorage.removeItem("city");
+
+// Check the stored values in console
+console.log("Name:", localStorage.getItem("name"));
+console.log("City:", localStorage.getItem("city")); // Should be null after removal
+console.log("Pin Code:", localStorage.getItem("pinCode"));
+console.log("District:", localStorage.getItem("district"));
+
+    </script>
+    
+</body>
+</html>
